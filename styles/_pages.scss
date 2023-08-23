@@ -1,0 +1,147 @@
+html {
+    font-size: $font-root + px;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include Inter400();
+    font-size: 20px;
+    color: $main-brown;
+
+}
+
+main {
+}
+
+.page {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+/**Layout***/
+
+.container {
+    width: 90%;
+    max-width: toRem(1750);
+    margin-inline: auto;
+}
+
+/**Layout***/
+
+// img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     transition: transform 0.2s;
+// }
+
+a {
+    text-decoration: none;
+    cursor: alias;
+}
+
+// h1 {
+
+//     @include Inter800();
+//     font-size: toRem(48);
+//     // text-transform: uppercase;
+
+//     @include respond-mobile {
+//         font-size: toRem(40);
+//     }
+// }
+
+h3 {
+    color: $main-brown;
+    @include FontMontserratLight();
+    font-size: toRem(40);
+    text-transform: uppercase;
+
+    @include respond-laptop {
+        font-size: toRem(30);
+    }
+
+    @include respond-mobile {
+        // font-size: toRem(18);
+        font-size: 5vw;
+    }
+}
+
+h4 {
+    color: $main-brown;
+    font-size: 20px;
+    @include FontMontserratBold;
+    text-transform: capitalize;
+
+    @include respond-mobile {
+        font-size: toRem(14);
+    }
+}
+
+h5 {
+    color: $main-brown;
+    @include FontMontserratRegular;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+p {
+    @include Inter400();
+    font-size: toRem(16);
+    line-height: 1.4;
+
+    @include respond-tabletlandscape {
+        font-size: toRem(16);
+    }
+
+    @include respond-mobile {
+        // font-size: toRem(14);
+        // font-size: 2.5vw;
+    }
+}
+
+span {
+    @include Inter400();
+
+    @include respond-mobile {
+        font-size: toRem(14);
+        line-height: 1.4;
+    }
+}
+
+/// scroll bar
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    // background-color: $bg-brown;
+    margin-left: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color-grey;
+    border-radius: 10px;
+}
+
+/////// height
+.inviewHeight {
+    height: 100vh;
+}
+
+details>summary {
+    list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}

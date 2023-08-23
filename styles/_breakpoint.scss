@@ -1,0 +1,58 @@
+@mixin respond-mobile() { // <576px
+	@media (max-width: 576px) {
+		@content;
+	}
+  
+	body[device="Mobile"] & {
+		@content;
+	}
+  }
+  
+  @mixin respond-tablet() { // <=768px
+	@media (max-width: 768px) {
+		@content;
+	}
+  }
+  
+  @mixin respond-tabletlandscape() { // <=992px
+	@media (max-width: 992px) {
+		@content;
+	}
+  }
+
+  @mixin respond-tabletbig() { // <=1024px
+	@media (max-width: 1024px) {
+		@content;
+	}
+  }
+  
+  @mixin respond-laptop() { // <=1200px
+	@media (max-width: 1200px) {
+		@content;
+	}
+  }
+  
+  @mixin respond-laptop-big() { // <=1400px
+	@media (max-width: 1400px) {
+		@content;
+	}
+  }
+  
+  @mixin respond-desktop-small() { // <=1600px
+	@media (max-width: 1600px) {
+		@content;
+	}
+  }
+  
+
+  @mixin respond-minheight() { // height>=700px
+	@media (min-height: 700px) {	
+		@content;
+	}
+  }
+
+  @mixin respond-maxheight() { // height>=900px
+	@media (max-height: 900px) {	
+		@content;
+	}
+  }

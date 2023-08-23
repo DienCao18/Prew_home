@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@700&family=Montserrat:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Oswald&display=swap');
+
+@mixin Oswal () {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+@mixin Inter800 () {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+@mixin Inter400 () {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+@mixin Inter600 () {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+
+@mixin FontMontserratLight () {
+    font-family: 'Montserrat', arial, helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+@mixin FontMontserratRegular () {
+    font-family: 'Montserrat', arial, helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+
+@mixin FontMontserratBold () {
+    font-family: 'Montserrat', arial, helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@mixin FontMontserratExtraBold () {
+    font-family: 'Montserrat', arial, helvetica, sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+}

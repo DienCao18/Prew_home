@@ -1,0 +1,161 @@
+/*===================
+PARAMATERS=====================*/
+$font-root: 20;
+/*===================
+COLOR=====================*/
+$main-brown: #453926;
+$bg-brown: #4e3b23;
+$color-white: #fff;
+$color-black: #000;
+$color-beige: #faf2e5;
+$color-grey: #707070;
+$color-grey-dark: #535353;
+$color-lightpink: #e6ad87;
+$color-light-orange: #fbeed8;
+
+$color-errors: #fc0000;
+/*===================
+FONTS=====================*/
+
+/*===================
+FUNCTIONS=====================*/
+@function em($size) {
+	@return #{$size / 13px}em;
+}
+
+//// convert px to rem
+
+@function toRem($value) {
+	$remValue: calc($value / 20) + rem;
+	@return $remValue;
+}
+
+/*===================
+MIXIN=====================*/
+@mixin animate($time) {
+	-webkit-transition: all $time;
+	-moz-transition: all $time;
+	transition: all $time;
+}
+
+@mixin selectNone() {
+	-webkit-user-select: none;
+	/* Chrome all / Safari all */
+	-moz-user-select: none;
+	/* Firefox all */
+	-ms-user-select: none;
+	/* IE 10+ */
+	user-select: none;
+	/* Likely future */
+}
+
+@mixin boderRadius($value) {
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	border-radius: $value;
+}
+
+@mixin borderCorner($value) {
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	border-radius: $value;
+}
+
+@mixin setOpacity($value) {
+	opacity: $value;
+	filter: alpha(opacity=$value * 100);
+}
+
+@mixin backgroundCover() {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@mixin displayFlex() {
+	display: -webkit-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;
+	/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;
+	/* TWEENER - IE 10 */
+	display: -webkit-flex;
+	/* NEW - Chrome */
+	display: flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+	-webkit-justify-content: center;
+	/* Safari 6.1+ */
+	justify-content: center;
+
+	-webkit-align-items: center;
+	/* Safari 7.0+ */
+	align-items: center;
+}
+
+@mixin objAbsoluteMiddle() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	/* IE 9 */
+	-webkit-transform: translate(-50%, -50%);
+	/* Safari */
+}
+
+@mixin clearObjAbsoluteMiddle() {
+	position: relative;
+	top: auto;
+	left: auto;
+	transform: none;
+	-ms-transform: none;
+	/* IE 9 */
+	-webkit-transform: none;
+	/* Safari */
+}
+
+@mixin Rotate($value) {
+	-ms-transform: rotate($value + deg);
+	/* IE 9 */
+	-moz-transform: rotate($value + deg);
+	-o-transform: rotate($value + deg);
+	-webkit-transform: rotate($value + deg);
+	/* Chrome, Safari, Opera */
+	transform: rotate($value + deg);
+}
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin noselect {
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Chrome/Safari/Opera */
+	-khtml-user-select: none;
+	/* Konqueror */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+@mixin zoomImage {
+	transform: scale(1.1);
+}
+
+@mixin contentInner {
+	width: 90%;
+	max-width: toRem(1750);
+	margin: auto;
+}
