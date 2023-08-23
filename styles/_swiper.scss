@@ -321,37 +321,25 @@ swiper-container:not(.swiper-watch-progress),
   }
 }
 
-//css for case swiper
-// .case-swiper .swiper-wrapper {
+
+/// I code
+// .swiper {
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .swiper-slide {
+//   text-align: center;
+//   font-size: 18px;
+//   background: #fff;
+//   display: flex;
+//   justify-content: center;
 //   align-items: center;
 // }
 
-// .case-swiper .swiper-wrapper .swiper-slide {
-//   height: auto;
-//   width: auto !important;
-
-//   @include respond-mobile {
-//     width: unset !important;
-//   }
-// }
-
-// //css for case swiper
-// .case-swiper {
-//   opacity: 0;
-
-//   &.loaded {
-//     opacity: 1;
-//   }
-// }
-
-// .isload {
-//   .swiper-wrapper .swiper-slide {
-//     width: auto;
-//   }
-
-//   opacity: 0;
-
-//   &.--ed {
-//     opacity: 1;
-//   }
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
 // }
