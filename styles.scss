@@ -2,6 +2,10 @@
 @import "./styles/all.scss";
 
 
+
+  
+
+
 .header {
     position: absolute;
     top: 0;
@@ -51,8 +55,8 @@
                     justify-content: space-between;
 
                     a {
+                        color: #313131;
                         &:hover {
-                            color: #313131;
                             border-bottom: 1px solid #F9841A;
                             cursor: alias;
                         }
@@ -209,7 +213,7 @@
         }
 
         img {
-            width: 100%;
+            width: 100vw;
             height: 100%;
             object-fit: cover;
             transition: transform 0.2s;
