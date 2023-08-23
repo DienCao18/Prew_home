@@ -1831,6 +1831,7 @@ body[device=Mobile] .document .document_title .document_title_search form .docum
 }
 .document .document_content .document_content_block .document_content_comment {
   margin: 8px 14px 15px 10px;
+  display: flex;
 }
 .document .document_content .document_content_block .document_content_comment span {
   margin-left: 2px;
