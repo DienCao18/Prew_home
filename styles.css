@@ -1843,6 +1843,7 @@ body[device=Mobile] .document .document_title .document_title_search form .docum
 .document .document_content .document_content_block .document_content_comment {
   margin: 8px 14px 15px 10px;
   display: flex;
+  align-items: center;
 }
 .document .document_content .document_content_block .document_content_comment span {
   margin-left: 2px;
@@ -2772,6 +2773,10 @@ body[device=Mobile] .students .student_13 {
   color: #8701CA;
   background-color: #fff;
 }
+.company .company_title .company_title_button .prev_button img:hover {
+  background-image: url("./public/images/arrow_right2.png");
+  transform: rotate(180deg);
+}
 .company .company_title .company_title_button .prev_button:hover {
   background-color: #8701CA;
   color: #ffffff;
@@ -2783,9 +2788,16 @@ body[device=Mobile] .students .student_13 {
   color: #8701CA;
   background-color: #fff;
 }
+.company .company_title .company_title_button .next_button img {
+  transform: rotate(180deg);
+}
+.company .company_title .company_title_button .next_button img:hover {
+  background-image: url("./public/images/arrow_right2.png");
+}
 .company .company_title .company_title_button .next_button:hover {
   background-color: #8701CA;
   color: #ffffff;
+  transform: rotate(180deg);
 }
 .company .company_logo .slider_container .slider {
   display: flex;
