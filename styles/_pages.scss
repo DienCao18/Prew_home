@@ -11,7 +11,7 @@ body {
     @include Inter400();
     font-size: 20px;
     color: $main-brown;
-
+    overflow-x: hidden;
 }
 
 main {

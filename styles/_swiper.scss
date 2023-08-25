@@ -317,6 +317,7 @@ swiper-container:not(.swiper-watch-progress),
 
     .swiper-pagination-bullet-active {
       background-color: $bg-brown;
+      object-fit: cover;
     }
   }
 }
@@ -343,3 +344,6 @@ swiper-container:not(.swiper-watch-progress),
 //   height: 100%;
 //   object-fit: cover;
 // }
+
+
+

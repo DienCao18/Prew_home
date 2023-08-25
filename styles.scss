@@ -2441,6 +2441,10 @@
             position: absolute;
             right: 0%;
             cursor: pointer;
+            @include respond-tablet() {
+                top: 10%;
+            }
+            
 
         }
 
@@ -2449,7 +2453,10 @@
             position: absolute;
             right: 0%;
             cursor: pointer;
-
+            @include respond-tablet() {
+                 top: 5%;  
+            }
+            
         }
 
         .footer_phone {
@@ -2457,7 +2464,10 @@
             position: absolute;
             right: 1%;
             cursor: pointer;
-
+            @include respond-tablet() {
+                top: 0%;
+            }
+            
             // @include  respond-laptop-big() {
             //    top:5%;
             // }

@@ -369,6 +369,7 @@ body {
   line-height: 1.2;
   font-size: 20px;
   color: #453926;
+  overflow-x: hidden;
 }
 
 .page {
@@ -800,6 +801,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 .swiper_bullet_brown .swiper-pagination .swiper-pagination-bullet-active,
 .swiper_bullet_brown + .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #4e3b23;
+  object-fit: cover;
 }
 
 .header {
@@ -2937,17 +2939,32 @@ body[device=Mobile] .students .student_13 {
   right: 0%;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .footer .footer_block .footer_zalo {
+    top: 10%;
+  }
+}
 .footer .footer_block .footer_messager {
   top: 28%;
   position: absolute;
   right: 0%;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .footer .footer_block .footer_messager {
+    top: 5%;
+  }
+}
 .footer .footer_block .footer_phone {
   top: 17%;
   position: absolute;
   right: 1%;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .footer .footer_block .footer_phone {
+    top: 0%;
+  }
 }
 .footer .footer_brand {
   display: flex;
